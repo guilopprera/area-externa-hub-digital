@@ -1,0 +1,25 @@
+::ng-deep * {
+  font-family: "Gotham", sans-serif;
+}
+
+::ng-deep body {
+  margin: 0;
+}
+
+.header {
+  .logo {
+    position: absolute;
+    top: 0.85vw;
+    left: 15vw;
+
+    img {
+      width: 100px;
+    }
+  }
+}
+
+.content {
+  .title {
+    text-align: center;
+  }
+}
