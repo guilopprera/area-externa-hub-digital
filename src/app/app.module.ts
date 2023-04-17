@@ -13,6 +13,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
+import { DividerModule } from 'primeng/divider';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
     FontAwesomeModule,
     ButtonModule,
     AvatarModule,
-    AvatarGroupModule
+    AvatarGroupModule,
+    DividerModule,
+    BreadcrumbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

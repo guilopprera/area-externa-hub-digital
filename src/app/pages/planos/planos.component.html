@@ -1,24 +1,226 @@
 <div class="page">
-  <div class="header">
-    <div class="card">
-      <div class="logo">
-        <img src="../../../assets/imgs/starup-horizontal2@2x.png" alt="">
+  <div class="img-1">
+    <div class="header">
+      <div class="div-opcoes-header div-logo-header">
+        <img src="../../../assets/imgs/startup-horizontal@2x.png" alt="">
       </div>
 
-      <p-menubar [model]="items">
-      </p-menubar>
+      <div class="div-opcoes-header div-links-header">
+        <ul>
+          <li><a href="">HUB</a></li>
+          <li><a href="">STARTUPS</a></li>
+          <li><a href="">MANTENEDORES</a></li>
+          <li><a href="">SERVIÇOS</a></li>
+          <li><a href="">EVENTOS</a></li>
+          <li><a href="">BLOG</a></li>
+        </ul>
+      </div>
+      <div class="div-opcoes-header div-btn-login">
+        <button icon="pi pi-user" class="btn-login">
+          <img src="../../../assets/icons/user.png" alt=""> LOGIN </button>
+      </div>
     </div>
-  </div>
-  <div class="content">
-    <div class="title">
-      <div class="grid">
-        <div class="col-4"><h2>STARTUPS</h2>
-          <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare tellus, quam in diam, at leo ipsum. Non
-            pellentesque duis morbi eget porta erat. Orci ut vel urna scelerisque lacus, neque morbi. Arcu faucibus augue
-            purus, sagittis, vel quam.</label></div>
-        <div class="col-4 col-offset-4">4</div>
-    </div>
-      
-    </div>
-  </div>
-</div>
+
+    <div class="content">
+      <div class="div-sobre-o-evento">
+        <p-breadcrumb class="temp" [model]="items"></p-breadcrumb>
+
+        <div class="grid">
+          <div class="col-8 col-part-1">
+            <img src="../../../assets/imgs/startup-image.jpg" class="img-evento" alt="">
+
+            <div class="div-description">
+              <div class="div-titulo">
+                <label class="titulo">Sobre o evento</label>
+              </div>
+              <div class="div-subtitulo">
+                <label class="text-base">O Workshop LK Cursos 2023 será realizado nos dias 1 e 2 de julho de 2023 em
+                  Vitória
+                  de Santo Antão,
+                  Pernambuco. O evento é voltado para profissionais técnicos em reparo de aparelhos celulares e tablets.
+
+                  Serão 14 especialistas em reparos de aparelhos iPhone, aparelhos Android e também especialistas em
+                  reparo
+                  de telas e troca de vidros que estarão presentes como palestrantes.
+
+                  O workshop promete ser uma oportunidade única para aprender técnicas avançadas de reparo e troca de
+                  peças
+                  em dispositivos móveis. Não perca esta chance de aprimorar suas habilidades técnicas e expandir seu
+                  conhecimento neste setor em constante evolução.</label>
+              </div>
+            </div>
+
+            <div class="div-local">
+              <label class="label-titulo">Local do evento</label>
+
+              <label class="label-subtitulo"> Village Recepções </label>
+              <label class="label-subtitulo">Avenida Henrique de Holanda, 51, Redenção, Vitória de Santo Antão,
+                55</label>
+
+              <div class="div-btn-como-chegar">
+                <button icon="pi pi-user" class="btn-login">
+                  <label>Como chegar</label>
+                  <img src="../../../assets/icons/location-pin.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 col-part-2">
+            <div class="div-ticket">
+              <div class="div-info-1">
+                <label>Conferências e Seminários</label>
+                <label class="label-titulo">Conferência Influ 2023</label>
+
+                <div class="div-local">
+                  <img src="../../../assets/icons/location-pin.png" alt="">
+                  <label>Vitória de Santo Antão / Pernambuco</label>
+                </div>
+
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>01 de Julho de 2023 às 09:00h</label>
+                </div>
+              </div>
+              <hr>
+              <div class="div-info-2">
+                <div class="div-tipo-convite">
+                  <div class="div-convite">
+                    <label class="label-descricao font-bold">Ingresso Individual</label>
+                    <label class="label-valor font-bold">R$ 650,00</label>
+                    <label class="label-data">Até 01/07 às 12:00</label>
+                  </div>
+
+                  <div class="div-quantidade">
+                    <button>-</button>
+                    <input type="number" value="0" id="">
+                    <button>+</button>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="div-info-2">
+                <div class="div-tipo-convite">
+                  <div class="div-convite">
+                    <label class="label-descricao font-bold">Ingresso Caravana</label>
+                    <label class="label-valor font-bold">R$ 2.600,00</label>
+                    <label class="label-data">Até 01/07 às 12:00</label>
+                  </div>
+
+                  <div class="div-quantidade">
+                    <button>-</button>
+                    <input type="number" value="0" id="">
+                    <button>+</button>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="div-info-3">
+                <div class="div-valor-total">
+                  <div>
+                    <label class="label-descricao font-bold">Total</label>
+                    <label class="label-valor">{{qtdIngressos}} ingressos</label>
+                  </div>
+
+                  <div class="div-total">
+                    <label class="font-bold"> R$0,00</label>
+                  </div>
+                </div>
+                <div class="div-cupom-desconto">
+                  <label>Possui cupom de desconto?</label>
+
+                  <div class="div-cupom">
+                    <input class="input-cupom" type="text" placeholder="Aplicar cupom">
+                    <img src="../../../assets/icons/check.png" alt="">
+                  </div>
+
+                  <div class="div-btn-finalizar-compra">
+                    <button class="btn-finalizar-compra">
+                      <label>FINALIZAR COMPRA</label>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid div-sobre-organizador">
+        <div class="col-12">
+          <hr>
+          <div class="div-item-organizador">
+            <div class="div-description">
+              <label class="label-titulo">Sobre o organizador</label>
+
+              <label class="label-subtitulo"> O primeiro HUB de inovação aberta da indústria no Brasil. Nossa missão é
+                conectar o ecossistema de inovação à indústria, criando as melhores soluções para o setor e a
+                sociedade.
+                Queremos transformar as indústrias e acelerar startups, para estimular o empreendedorismo inovador,
+                aproximando pessoas e negócios com o objetivo de impactar positivamente a economia de Mato Grosso do
+                Sul.
+              </label>
+            </div>
+
+            <div class="div-img">
+              <img src="../../../assets/imgs/startup-image.jpg" alt="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slice-5 footer">
+
+        <div class="grid">
+          <div class="col-3 col-img-sesi">
+            <img src="../../../assets/imgs/startup-white.png" alt="">
+
+            <div class="social-media">
+              <img src="../../../assets/icons/linkedin.png" alt="linkedin">
+              <img src="../../../assets/icons/instagram.png" alt="instagram">
+              <img src="../../../assets/icons/whatsapp.png" alt="whatsapp">
+            </div>
+          </div>
+
+          <div class="col-5 col-links">
+            <ul>
+              <li><a href="">Missão</a></li>
+              <li><a href="">Quem somos</a></li>
+              <li><a href="">A indústria</a></li>
+              <li><a href="">Trabalhe conosco</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="">Eventos</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contato</a></li>
+              <li><a href="">Termos da LGPD</a></li>
+            </ul>
+          </div>
+
+          <div class="col-4 col-subscribe">
+            <div>
+              <label>Inscreva-se na nossa newsletter</label>
+
+              <div class="div-input">
+                <div class="input-container">
+                  <input class="input-field" type="text" placeholder="Insira aqui seu e-mail">
+                  <i class="pi pi-comment" style="font-size: 2rem"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <hr> -->
+
+        <div class="last-thing">
+          <label>© Startup Sesi MS. All rights reserved</label>
+
+          <div class="voltar-ao-topo">
+            <label>Voltar ao topo </label>
+            <i class="pi pi-arrow-up"></i>
+          </div>
+        </div>
+      </div>

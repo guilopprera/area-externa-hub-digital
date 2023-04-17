@@ -6,20 +6,437 @@
   margin: 0;
 }
 
-.header {
-  .logo {
-    position: absolute;
-    top: 0.85vw;
-    left: 15vw;
+::ng-deep .p-scrollpanel .p-scrollpanel-bar {
+  background: #989898;
+}
 
+::ng-deep button.btn-login {
+  background-color: #34c1e2;
+  border-radius: 8px !important;
+  border-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 15vw !important;
+  height: 50px;
+}
+
+::ng-deep hr {
+  height: 1px;
+  background-color: #d7deea;
+  border: none;
+}
+
+::ng-deep input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.header {
+  background: #011a2b;
+  display: flex;
+  justify-content: center;
+
+  .div-logo-header {
     img {
-      width: 100px;
+      width: 130px;
+    }
+
+    padding: 20px 0 20px;
+  }
+
+  .div-links-header ul {
+    text-align: center;
+
+    li {
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a {
+      color: #fff !important;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      margin: 0 20px;
+    }
+  }
+
+  .div-btn-login {
+    padding: 10px 20px 0 50px;
+
+    button {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      width: 15vw !important;
+      height: 50px;
+
+      img {
+        width: 20px;
+        margin-right: 5px;
+      }
     }
   }
 }
 
 .content {
-  .title {
-    text-align: center;
+  .grid {
+    margin: 0 !important;
+  }
+
+  .label-titulo {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+
+  .label-subtitulo {
+    display: block;
+    font-size: 18px;
+  }
+
+  .div-sobre-o-evento {
+    padding: 30px 100px;
+  }
+
+  .div-sobre-organizador {
+    padding: 0px 100px;
+  }
+
+  .col-part-1 {
+    .img-evento {
+      border-radius: 20px;
+      width: 50vw;
+    }
+
+    .div-description {
+      .div-titulo {
+        margin-top: 50px;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .div-subtitulo {
+        margin-top: 25px;
+        font-size: 16px;
+      }
+    }
+
+    .div-local {
+      padding: 30px;
+      margin-top: 50px;
+      border: 1px solid #d7deea;
+      border-radius: 8px;
+
+      .div-btn-como-chegar {
+        margin-top: 30px;
+
+        button {
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          width: 15vw !important;
+          height: 50px;
+
+          img {
+            width: 20px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .col-part-2 {
+    .div-ticket {
+      padding: 30px;
+
+      background-color: #f4f7fb;
+
+      .div-info-1 {
+        .label-titulo {
+          font-size: 26px;
+        }
+
+        label {
+          display: block;
+        }
+
+        .div-local,
+        .div-data {
+          display: flex;
+          text-align: left;
+          font-size: 14px;
+          padding: 10px 0;
+          align-items: center;
+
+          img {
+            margin-right: 10px;
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+
+      .div-info-2 {
+        padding: 10px 0;
+
+        .div-tipo-convite {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .div-convite {
+            display: block;
+
+            label {
+              margin: 5px 0;
+              display: block;
+
+              &.label-data {
+                font-size: 12px;
+                color: #8690a2;
+              }
+            }
+          }
+        }
+
+        .div-quantidade {
+          display: flex;
+          border: 1px solid #d7deea;
+          border-radius: 2px;
+
+          button {
+            // width: 50px;
+            background-color: #fff;
+            border: 0;
+          }
+
+          input {
+            text-align: center;
+            width: 50px;
+            height: 30px;
+            border: 0;
+          }
+        }
+
+        .label-titulo {
+          font-size: 26px;
+        }
+
+        label {
+          display: block;
+        }
+      }
+
+      .div-info-3 {
+        padding: 10px 0;
+
+        .div-valor-total {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          label {
+            margin: 5px 0;
+            display: block;
+
+            &.label-data {
+              font-size: 12px;
+              color: #8690a2;
+            }
+          }
+        }
+
+        .div-cupom-desconto {
+          display: block;
+          margin: 20px 0;
+
+          label {
+            display: block;
+          }
+
+          .div-cupom {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding-right: 10px;
+
+            .input-cupom {
+              width: 100%;
+              height: 50px;
+              padding: 10px 20px;
+              border: 0;
+              border-top-left-radius: 60px;
+              border-bottom-left-radius: 60px;
+            }
+
+            img {
+              width: 15px;
+              height: 15px;
+            }
+          }
+
+          .btn-finalizar-compra {
+            width: 100%;
+            height: 50px;
+            background-color: #34c1e2;
+            border-style: none;
+            border-radius: 8px !important;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .div-item-organizador {
+    padding: 30px;
+    display: flex;
+
+    .div-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 300px;
+        // height: 50px;
+      }
+    }
+  }
+}
+
+::ng-deep .p-breadcrumb {
+  border: 0;
+}
+
+.footer {
+  padding: 4vh 0;
+  background: linear-gradient(90deg, #011a2b 0%, #0a2d51 100%);
+  color: #fff;
+
+  .grid {
+    margin: 0 !important;
+
+    .col-img-sesi {
+      text-align: center;
+      padding: 50px 0;
+
+      img {
+        width: 150px;
+      }
+
+      .social-media {
+        margin-top: 20px;
+        align-items: center;
+
+        label {
+          font-size: 1.3rem;
+          margin-right: 20px;
+
+          a {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+
+        img {
+          background: white;
+
+          margin: 0 5px;
+          max-width: 35px;
+          padding: 5px;
+          border: 1px solid #5dcde8;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .col-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      ul {
+        li {
+          list-style: none;
+          margin: 35px 0;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .col-subscribe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      label {
+        font-size: 36px;
+      }
+
+      .div-input {
+        .input-container {
+          display: flex;
+          width: 100%;
+          margin-top: 25px;
+          border-radius: 8px;
+        }
+
+        input {
+          border: 0;
+          padding: 10px;
+          border-left: 1px solid #000 !important;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        i {
+          padding: 10px;
+          background: #fff;
+          color: black;
+          min-width: 50px;
+          text-align: center;
+
+          border-right: 1px solid #000 !important;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .last-thing {
+    display: flex;
+    padding: 30px 100px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    .voltar-ao-topo {
+      text-align: right;
+      cursor: pointer;
+
+      button {
+        width: 50px;
+        height: 50px;
+      }
+
+      i {
+        margin-left: 10px;
+      }
+    }
   }
 }
