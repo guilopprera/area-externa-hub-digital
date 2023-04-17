@@ -1,0 +1,765 @@
+<div class="page">
+  <div class="img-1">
+    <div class="header">
+      <div class="div-opcoes-header div-logo-header">
+        <img src="../../../assets/imgs/startup-horizontal@2x.png" alt="">
+      </div>
+
+      <div class="div-opcoes-header div-links-header">
+        <ul>
+          <li><a href="">HUB</a></li>
+          <li><a href="">STARTUPS</a></li>
+          <li><a href="">MANTENEDORES</a></li>
+          <li><a href="">SERVIÇOS</a></li>
+          <li><a href="">EVENTOS</a></li>
+          <li><a href="">BLOG</a></li>
+        </ul>
+      </div>
+      <div class="div-opcoes-header div-btn-login">
+        <button icon="pi pi-user" class="btn-login">
+          <img src="../../../assets/icons/user.png" alt=""> LOGIN </button>
+      </div>
+    </div>
+
+    <div class="slice-1">
+      <div class="grid">
+        <div class="col-7">
+          <div class="titulo font-bold">
+            <label>Viva e promova experiências inesquecíveis do presencial ao virtual </label>
+          </div>
+
+          <div class="subtitulo">
+            <label class="text-lg">
+              As novas tecnologias e os novos modelos de negócio que vão acelerar o resultado da sua empresa
+            </label>
+          </div>
+
+          <div class="btn">
+            <button> Conheça nossa plataforma
+              <i class="pi pi-arrow-right"></i>
+            </button>
+          </div>
+          <div class="col-6 col-img">
+          </div>
+        </div>
+
+        <div class="col-5">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="slice-2">
+      <div class="grid">
+        <div class="col-12">
+          <div class="titulo font-bold">
+            <label>Encontre os eventos disponíveis perto de você! </label>
+          </div>
+          <div class="div-input-search">
+            <div class="div-input">
+              <i class="pi pi-search" style="font-size: 2rem"></i>
+              <input class="min-w-full input-field" type="text" placeholder="Buscar eventos">
+            </div>
+          </div>
+
+          <div class="div-filters">
+            <div class="col-4">
+              <p-dropdown [options]="categorias" placeholder="Selecione uma categoria"></p-dropdown>
+            </div>
+            <div class="col-4">
+              <p-dropdown [options]="categorias" placeholder="Tipo do evento"></p-dropdown>
+            </div>
+            <div class="col-4">
+              <p-dropdown [options]="categorias" placeholder="Período"></p-dropdown>
+            </div>
+          </div>
+
+          <div class="div-limpar-busca">
+            <div class="col-12">
+              <div>
+                <label>limpar seleção</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slice-3">
+      <div class="grid">
+        <div class="col-12">
+          <div class="div-agenda">
+            <label class="titulo font-bold">Agenda</label>
+          </div>
+          <div class="div-lista-agenda">
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <label class="label-subtitulo">Conferências e Seminários</label>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+
+                <div class="div-local">
+                  <img src="../../../assets/icons/location-pin.png" alt="">
+                  <label>Campina Grande / Paraíba</label>
+                </div>
+
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <div class="div-saiba-mais" (click)="abrirDetalhes()">
+                  <label> Saiba mais > </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <label class="label-subtitulo">Conferências e Seminários</label>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+
+                <div class="div-local">
+                  <img src="../../../assets/icons/location-pin.png" alt="">
+                  <label>Campina Grande / Paraíba</label>
+                </div>
+
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <div class="div-saiba-mais" (click)="abrirDetalhes()">
+                  <label> Saiba mais > </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-encerrado">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições encerradas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <label class="label-subtitulo">Conferências e Seminários</label>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+
+                <div class="div-local">
+                  <img src="../../../assets/icons/location-pin.png" alt="">
+                  <label>Campina Grande / Paraíba</label>
+                </div>
+
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <div class="div-saiba-mais" (click)="abrirDetalhes()">
+                  <label> Saiba mais > </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-encerrado">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições encerradas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <label class="label-subtitulo">Conferências e Seminários</label>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+
+                <div class="div-local">
+                  <img src="../../../assets/icons/location-pin.png" alt="">
+                  <label>Campina Grande / Paraíba</label>
+                </div>
+
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <div class="div-saiba-mais" (click)="abrirDetalhes()">
+                  <label> Saiba mais > </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-encerrado">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições encerradas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <label class="label-subtitulo">Conferências e Seminários</label>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+
+                <div class="div-local">
+                  <img src="../../../assets/icons/location-pin.png" alt="">
+                  <label>Campina Grande / Paraíba</label>
+                </div>
+
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <div class="div-saiba-mais" (click)="abrirDetalhes()">
+                  <label> Saiba mais > </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slice-4">
+      <div class="grid">
+        <div class="col-12">
+          <div class="div-agenda">
+            <label class="titulo font-bold">Congressos e seminários</label>
+          </div>
+          <div class="div-lista-agenda">
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="div-agenda">
+            <label class="titulo font-bold">Eventos online</label>
+          </div>
+          <div class="div-lista-agenda">
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="div-agenda">
+            <label class="titulo font-bold">Eventos presenciais</label>
+          </div>
+          <div class="div-lista-agenda">
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="div-agenda">
+            <label class="titulo font-bold">Cursos e mentoria</label>
+          </div>
+          <div class="div-lista-agenda">
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+
+            <div class="div-item-agenda">
+              <div class="div-imagem-agenda">
+                <img src="../../../assets/imgs/startup-image.jpg" alt="" srcset="">
+
+                <div class="div-status-inscricao status-aberto">
+                  <div>
+                    <i class="pi-clock"></i>
+                    <label>Inscrições abertas</label>
+                  </div>
+                </div>
+              </div>
+              <div class="div-descricao-agenda">
+                <div class="div-data">
+                  <img src="../../../assets/icons/calendar.png" alt="">
+                  <label>30 de Março às 20:00h</label>
+                </div>
+
+                <label class="label-titulo font-bold">Conferência Influ 2023</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slice-5 footer">
+    <div class="grid">
+      <div class="col-3 col-img-sesi">
+        <img src="../../../assets/imgs/startup-white.png" alt="">
+
+        <div class="social-media">
+          <img src="../../../assets/icons/linkedin.png" alt="linkedin">
+          <img src="../../../assets/icons/instagram.png" alt="instagram">
+          <img src="../../../assets/icons/whatsapp.png" alt="whatsapp">
+        </div>
+      </div>
+
+      <div class="col-5 col-links">
+        <ul>
+          <li><a href="">Missão</a></li>
+          <li><a href="">Quem somos</a></li>
+          <li><a href="">A indústria</a></li>
+          <li><a href="">Trabalhe conosco</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="">Eventos</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Termos da LGPD</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4 col-subscribe">
+        <div>
+          <label>Inscreva-se na nossa newsletter</label>
+
+          <div class="div-input">
+            <div class="input-container">
+              <input class="input-field" type="text" placeholder="Insira aqui seu e-mail">
+              <i class="pi pi-comment" style="font-size: 2rem"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <hr> -->
+
+    <div class="last-thing">
+      <label>© Startup Sesi MS. All rights reserved</label>
+
+      <div class="voltar-ao-topo">
+        <label>Voltar ao topo </label>
+        <i class="pi pi-arrow-up"></i>
+      </div>
+    </div>
+  </div>

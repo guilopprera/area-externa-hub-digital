@@ -135,13 +135,19 @@ input::-webkit-inner-spin-button {
         margin-top: 30px;
 
         button {
+          cursor: pointer;
           align-items: center;
           justify-content: center;
           display: flex;
           width: 15vw !important;
           height: 50px;
 
+          .label-subtitulo {
+            cursor: pointer;
+          }
+
           img {
+            cursor: pointer;
             width: 20px;
             margin-left: 10px;
           }
@@ -282,6 +288,7 @@ input::-webkit-inner-spin-button {
           }
 
           .btn-finalizar-compra {
+            cursor: pointer;
             width: 100%;
             height: 50px;
             background-color: #34c1e2;
@@ -291,6 +298,10 @@ input::-webkit-inner-spin-button {
             font-size: 14px;
             text-transform: uppercase;
             margin-top: 20px;
+
+            label {
+              cursor: pointer;
+            }
           }
         }
       }

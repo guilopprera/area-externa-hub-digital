@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { QuemSomosComponent } from './pages/quem-somos/quem-somos.component';
-import { PlanosComponent } from './pages/planos/planos.component';
+import { EventoDetalhesComponent } from './pages/evento-detalhes/evento-detalhes.component';
 import { CardModule } from 'primeng/card';
 import { MenubarModule } from 'primeng/menubar';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
@@ -15,13 +15,18 @@ import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { DividerModule } from 'primeng/divider';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { DropdownModule } from 'primeng/dropdown';
+import { ListaEventosComponent } from './pages/lista-eventos/lista-eventos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     QuemSomosComponent,
-    PlanosComponent
+    EventoDetalhesComponent,
+    ListaEventosComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,10 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
     AvatarModule,
     AvatarGroupModule,
     DividerModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    DropdownModule,
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

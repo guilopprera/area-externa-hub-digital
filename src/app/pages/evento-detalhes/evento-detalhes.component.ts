@@ -3,11 +3,11 @@ import { MenuItem } from 'primeng/api';
 
 
 @Component({
-  selector: 'app-planos',
-  templateUrl: './planos.component.html',
-  styleUrls: ['./planos.component.scss']
+  selector: 'app-evento-detalhes',
+  templateUrl: './evento-detalhes.component.html',
+  styleUrls: ['./evento-detalhes.component.scss']
 })
-export class PlanosComponent {
+export class EventoDetalhesComponent {
   public home: MenuItem;
   public items: MenuItem[] = [];
   public qtdIngressos: number = 0;
