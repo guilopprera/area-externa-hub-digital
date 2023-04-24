@@ -17,7 +17,7 @@
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  width: 15vw !important;
+  width: 20vw !important;
   height: 50px;
 }
 
@@ -61,7 +61,7 @@
       align-items: center;
       justify-content: center;
       display: flex;
-      width: 15vw !important;
+      width: 300px !important;
       height: 50px;
 
       img {
@@ -78,31 +78,55 @@
 }
 
 .img-1 {
-  background-color: #253b49;
+  background-color: #011a2b;
+  background-image: url("../../../assets/imgs/background-quemsomos.png");
+  background-size: cover;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .slice-1 {
   color: #fff;
-  padding: 20vh 5vw 15vh 10vw;
+  padding: 15vh 5vw 15vh 10vw;
 
   .titulo {
     font-size: 48px;
-    margin-bottom: 40px;
+    margin: 80px 0 40px 0;
   }
 
   .btn {
     margin-top: 50px;
   }
+
+  .col-img {
+    text-align: center;
+  }
 }
 
 .slice-2 {
-  background: #faf9f9;
+  background-image: url("../../../assets/imgs/background-startup.png");
+  background-size: cover;
+  padding: 12vh 5vw 15vh 7vw;
   color: #000;
-  padding: 20vh 5vw 15vh 10vw;
+
+  img {
+    max-width: 100%;
+  }
+
+  .col-texto-startup {
+    margin-top: 60px;
+    line-height: 1.3rem;
+  }
 
   .titulo {
     font-size: 48px;
     margin-bottom: 40px;
+  }
+
+  .subtitulo {
+    margin-top: 80px;
   }
 
   .btn {
@@ -111,9 +135,23 @@
 }
 
 .slice-3 {
-  background: #133a55;
+  background-image: url("../../../assets/imgs/background-mantenedores.png");
+  background-size: cover;
   color: #fff;
-  padding: 20vh 5vw 15vh 10vw;
+  padding: 10vh 5vw 15vh 10vw;
+
+  img {
+    max-width: 100%;
+  }
+
+  .div-texto-mantenedores {
+    margin-top: 60px;
+    line-height: 1.3rem;
+  }
+
+  .col-img {
+    text-align: center;
+  }
 
   .titulo {
     font-size: 48px;
@@ -136,33 +174,40 @@
   .slice-4-col-1 {
     padding: 5vh 5vw 5vh 5vw;
     background: #f4f7fb;
+    line-height: 1.3rem;
 
     .titulo {
       font-size: 32px;
       margin-bottom: 40px;
     }
 
+    .titulo {
+      font-size: 28px !important;
+    }
+
+    .subtitulo {
+      font-size: 14px !important;
+      margin-top: 20px;
+    }
+
+    .btn {
+      margin-top: 50px;
+    }
+
     .div-join {
       display: flex;
       padding: 20px;
+      margin-top: 20px;
 
       img {
         width: 300px;
         margin-right: 50px;
       }
+    }
 
-      .titulo {
-        font-size: 28px !important;
-      }
-
-      .subtitulo {
-        font-size: 14px !important;
-        margin-top: 20px;
-      }
-
-      .btn {
-        margin-top: 50px;
-      }
+    .div-texto {
+      margin-top: 30px;
+      font-size: 20px;
     }
   }
 
@@ -191,15 +236,20 @@
 
       .card-item {
         display: block;
-        max-width: 500px;
+        max-width: 30vw;
         color: #000;
 
         .card-image {
-          margin: 30px;
+          margin: 30px 20px 0 0;
+          min-width: 150px;
+          min-height: 150px;
+          max-width: 250px;
+          max-height: 250px;
 
           img {
-            width: 75px;
-            height: 75px;
+            border-radius: 8px;
+            max-width: 100%;
+            max-height: 100%;
           }
         }
 
@@ -281,6 +331,8 @@
       }
 
       .div-input {
+        max-width: 300px;
+
         .input-container {
           display: flex;
           width: 100%;
@@ -289,6 +341,7 @@
         }
 
         input {
+          width: 80%;
           border: 0;
           padding: 10px;
           border-left: 1px solid #000 !important;
@@ -297,6 +350,7 @@
         }
 
         i {
+          width: 20%;
           padding: 10px;
           background: #fff;
           color: black;
