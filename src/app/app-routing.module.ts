@@ -6,7 +6,7 @@ import { EventoDetalhesComponent } from './pages/evento-detalhes/evento-detalhes
 import { ListaEventosComponent } from './pages/lista-eventos/lista-eventos.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '', component: QuemSomosComponent },
   { path: 'login', component: LoginComponent },
   { path: 'quem-somos', component: QuemSomosComponent },
   { path: 'lista-eventos', component: ListaEventosComponent},
