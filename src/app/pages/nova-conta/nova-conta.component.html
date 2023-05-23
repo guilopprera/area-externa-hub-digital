@@ -42,48 +42,53 @@
     </div>
   </header>
 
-  <section class="witdh-1200px flex-col center">
+  <section class="witdh-1200px">
     <nav class="width-100 breadcrumb flex-row">
       <ul class="flex-row">
         <li><a href="">Home</a></li>
         <li class="breadcrumb-separator">></li>
-        <li><a href="" class="breadcrumb-active">Login</a></li>
+        <li><a href="">Desafio</a></li>
+        <li class="breadcrumb-separator">></li>
+        <li><a href="" class="breadcrumb-active">Crie sua conta</a></li>
       </ul>
     </nav>
 
-    <main class="login-width flex-col center">
-      <h1 class="weight-700 text-left">Login</h1>
+    <main class="width-100 flex-col center">
+      <h1 class="weight-700 text-left">Crie sua conta</h1>
       <form class="width-100" action="">
         <div class="form-basic-account width-100 margin-top-50 grid">
-          <input type="email" name="" id="" placeholder="E-mail" />
-          <label for="remember-me" class="checkbox-container">
-            Lembrar-me
-            <input type="checkbox" name="" id="remember-me" />
+          <div class="inputs-grid grid">
+            <input type="text" name="" id="" placeholder="Nome da startup">
+            <input type="text" name="" id="" placeholder="CNPJ">
+          </div>
+          <div class="inputs-grid grid">
+            <input type="email" name="" id="" placeholder="E-mail">
+            <input type="tel" name="" id="" placeholder="Telefone">
+          </div>
+          <div class="inputs-grid grid">
+            <input type="url" name="" id="" placeholder="Site">
+            <input type="text" name="" id="" placeholder="Cidade">
+          </div>
+          <div class="inputs-grid-3 grid">
+            <input type="text" name="" id="" placeholder="CEP">
+            <input type="text" name="" id="" placeholder="Rua">
+            <input type="text" name="" id="" placeholder="Número">
+          </div>
+        </div>
+        <div class="agreement flex-row margin-top-50">
+          <label for="agreement" class="checkbox-container">
+            Estou de acordo com os <a href="">termos de uso e segurança</a>
+            <input type="checkbox" name="" id="agreement">
             <span class="checkmark"></span>
           </label>
-          <div class="width-100 password position-relative">
-            <!-- <ion-icon class="input-icon icon-left" name="key-outline"></ion-icon> -->
-            <input class="width-100" type="password" name="" id="" placeholder="Senha" />
-            <!-- <ion-icon class="input-icon icon-right" name="eye-outline"></ion-icon> -->
-          </div>
-          <a href="" class="lost-password">esqueci minha senha</a>
-          <button class="send-button button-login uppercase weight-600 width-100 flex-row center margin-top-50 center">
-            Entrar
-          </button>
-          <div class="account-or width-100 position-relative margin-top-50 flex-row center">ou</div>
-          <button class="linkedin third-part-login width-100 margin-top-50 flex-row center">
-            <!-- <ion-icon name="logo-linkedin"></ion-icon> -->
-            Faça login com LinkedIn
-          </button>
-          <button class="google third-part-login width-100 flex-row center">
-            <!-- <ion-icon name="logo-google"></ion-icon> -->
-            Faça login com Google
-          </button>
+        </div>
+        <button class="send-button uppercase weight-600 width-100 flex-row center margin-top-50 center">
+          Criar Conta
+        </button>
+        <div class="have-account width-100 weight-600 flex-row center margin-top-50">
+          Já possui uma conta? <a class="weight-600" href=""> Faça login</a>
         </div>
       </form>
-      <div class="have-account width-100 weight-600 flex-row center margin-top-50">
-        Ainda não tem uma conta? <a class="weight-600" href=""> Crie já sua conta.</a>
-      </div>
     </main>
   </section>
 

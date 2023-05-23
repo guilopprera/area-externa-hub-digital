@@ -19,6 +19,8 @@ import { DropdownModule } from 'primeng/dropdown';
 import { ListaEventosComponent } from './pages/lista-eventos/lista-eventos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'primeng/carousel';
+import { NovaContaComponent } from './pages/nova-conta/nova-conta.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { CarouselModule } from 'primeng/carousel';
     QuemSomosComponent,
     EventoDetalhesComponent,
     ListaEventosComponent,
+    NovaContaComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
