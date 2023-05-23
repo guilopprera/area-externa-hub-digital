@@ -1,0 +1,125 @@
+<div class="page">
+    <div class="img-1">
+      <div class="header">
+        <div class="div-opcoes-header div-logo-header">
+          <img src="../../../assets/imgs/startup-horizontal@2x.png" alt="">
+        </div>
+
+        <div class="div-opcoes-header div-links-header">
+          <ul>
+            <li><a href="">HUB</a></li>
+            <li><a href="">STARTUPS</a></li>
+            <li><a href="">MANTENEDORES</a></li>
+            <li><a href="">SERVIÇOS</a></li>
+            <li><a href="">EVENTOS</a></li>
+            <li><a href="">BLOG</a></li>
+          </ul>
+        </div>
+        <div class="div-opcoes-header div-btn-login ">
+          <button icon="pi pi-user" class="btn-login primary-color">
+            <img src="../../../assets/icons/user.png" alt=""> LOGIN </button>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="" style="display: flex; justify-content: center; align-items: center; margin-bottom: 130px;">
+            <section class="witdh-1200px">
+                <main class="width-100">
+                    <h1 class="weight-700 text-left primary-color">Crie sua conta</h1>
+                <form class="width-100" (ngSubmit)="onFormSubmit()">
+                    <div class="form-basic-account width-100 margin-top-50 grid-new">
+                        <div class="inputs-grid grid-new">
+                            <input type="text" [(ngModel)]="startupName" name="startupName" id="startupName"
+                                placeholder="Nome da startup">
+                            <input type="text" [(ngModel)]="cnpj" name="cnpj" id="cnpj" placeholder="CNPJ">
+                        </div>
+                        <div class="inputs-grid grid-new">
+                            <input type="email" [(ngModel)]="email" name="email" id="email" placeholder="E-mail">
+                            <input type="tel" [(ngModel)]="telefone" name="telefone" id="telefone" placeholder="Telefone">
+                        </div>
+                        <div class="inputs-grid grid-new">
+                            <input type="url" [(ngModel)]="site" name="site" id="site" placeholder="Site">
+                            <input type="text" [(ngModel)]="cidade" name="cidade" id="cidade" placeholder="Cidade">
+                        </div>
+                        <div class="inputs-grid-3 grid-new">
+                            <input type="text" [(ngModel)]="cep" name="cep" id="cep" placeholder="CEP">
+                            <input type="text" [(ngModel)]="rua" name="rua" id="rua" placeholder="Rua">
+                            <input type="text" [(ngModel)]="numero" name="numero" id="numero" placeholder="Número">
+                        </div>
+                    </div>
+                    <div class="agreement flex-row margin-top-50">
+                        <label for="agreement" class="checkbox-container primary-color">
+                            Estou de acordo com os <a href="">termos de uso e segurança</a>
+                            <input type="checkbox" [(ngModel)]="agreement" name="agreement" id="agreement">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="send-button uppercase weight-600 width-100 flex-row center margin-top-50 center primary-color">
+                        Criar Conta
+                    </button>
+                    <div class="have-account width-100 weight-600 flex-row center margin-top-50 primary-color">
+                        Já possui uma conta? <a class="weight-600" href=""> Faça login</a>
+                    </div>
+                </form>
+                </main>
+            </section>
+        </div>
+
+
+        <div class="slice-5 footer">
+
+            <div class="grid">
+              <div class="col-3 col-img-sesi">
+                <img src="../../../assets/imgs/startup-white.png" alt="">
+
+                <div class="social-media">
+                  <img src="../../../assets/icons/linkedin.png" alt="linkedin">
+                  <img src="../../../assets/icons/instagram.png" alt="instagram">
+                  <img src="../../../assets/icons/whatsapp.png" alt="whatsapp">
+                </div>
+              </div>
+
+              <div class="col-5 col-links">
+                <ul>
+                  <li><a href="">Missão</a></li>
+                  <li><a href="">Quem somos</a></li>
+                  <li><a href="">A indústria</a></li>
+                  <li><a href="">Trabalhe conosco</a></li>
+                </ul>
+
+                <ul>
+                  <li><a href="">Eventos</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contato</a></li>
+                  <li><a href="">Termos da LGPD</a></li>
+                </ul>
+              </div>
+
+              <div class="col-4 col-subscribe">
+                <div>
+                  <label>Inscreva-se na nossa newsletter</label>
+
+                  <div class="div-input">
+                    <div class="input-container">
+                      <input class="input-field" type="text" placeholder="Insira aqui seu e-mail">
+                      <i class="pi pi-comment" style="font-size: 2rem"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <hr> -->
+
+            <div class="last-thing">
+              <label>© Startup Sesi MS. All rights reserved</label>
+
+              <div class="voltar-ao-topo">
+                <label>Voltar ao topo </label>
+                <i class="pi pi-arrow-up"></i>
+              </div>
+            </div>
+          </div>
+      </div>
+
+

@@ -4,6 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { QuemSomosComponent } from './pages/quem-somos/quem-somos.component';
 import { EventoDetalhesComponent } from './pages/evento-detalhes/evento-detalhes.component';
 import { ListaEventosComponent } from './pages/lista-eventos/lista-eventos.component';
+import { NovaContaComponent } from './pages/nova-conta/nova-conta.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'quem-somos', component: QuemSomosComponent },
   { path: 'lista-eventos', component: ListaEventosComponent},
   { path: 'evento-detalhes', component: EventoDetalhesComponent},
+  { path: 'nova-conta', component: NovaContaComponent},
 ];
 
 @NgModule({

@@ -1,0 +1,287 @@
+section::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 682px;
+  height: 653px;
+  background-image: url("/assets/img/logos/startup_cinza.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100px;
+  z-index: -1;
+}
+
+.logo img {
+  width: 128px;
+}
+
+.main-menu {
+  width: 652px;
+}
+
+.nav-menu a {
+  color: var(--secondary-color);
+}
+
+.login-button {
+  width: 212px;
+  height: 49px;
+}
+
+.breadcrumb {
+  padding: 10px;
+}
+
+.breadcrumb-separator {
+  margin: 0 10px;
+}
+
+.breadcrumb-active {
+  color: var(--tertiary-color);
+}
+
+.form-header {
+  grid-template-columns: 2fr 4fr;
+  justify-items: start;
+  align-items: center;
+}
+
+.show-photo {
+  margin-bottom: 10px;
+  padding: 32px;
+  width: 174px;
+  height: 174px;
+  border-radius: 50%;
+  background-color: var(--gray-30);
+  cursor: pointer;
+}
+
+.show-photo ion-icon {
+  width: 100%;
+  height: 100%;
+  color: var(--gray-60);
+}
+
+.edit-photo {
+  cursor: pointer;
+}
+
+.edit-photo ion-icon {
+  margin: 10px;
+}
+
+.form-basic .inputs-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-basic .cols-grid {
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.password input {
+  padding-left: 40px;
+}
+
+.password .icon-right {
+  color: var(--gray-80);
+}
+
+.form-added-block .add-added-block {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  color: var(--tertiary-color);
+}
+
+.form-added-block .remove-added-block {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    color: var(--tertiary-color);
+  }
+
+.form-added-block .add-added-block label {
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+.mentoring-button {
+    cursor: pointer;
+}
+
+.mentoring-button span {
+  width: 40px;
+  color: var(--tertiary-color);
+}
+
+.mentoring-button div {
+  width: 40px;
+  height: 20px;
+  background-color: var(--tertiary-color);
+  border-radius: 20px;
+}
+
+.mentoring-button div span {
+  position: absolute;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  transition: ease 300ms;
+}
+
+.agreement {
+  justify-content: start;
+  align-items: center;
+}
+
+.agreement .checkbox-container {
+  font-size: var(--small-size);
+}
+
+.agreement a {
+  color: var(--tertiary-color);
+  text-decoration: underline;
+}
+
+.footer-container {
+  height: 100%;
+}
+
+.footer-top {
+  grid-template-columns: 1fr 2fr 1fr;
+  border-bottom: 1px solid var(--tertiary-color);
+  padding-bottom: 30px;
+}
+
+.footer-left {
+  padding: 20px;
+  height: 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  width: 154px;
+}
+
+.footer-socials .social-icon {
+  width: 45px;
+  height: 45px;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.footer-socials .social-icon ion-icon {
+  color: var(--secondary-color);
+}
+
+.footer-middle {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-size: var(--smaller-size);
+  padding: 20px;
+  gap: 40px;
+}
+
+.footer-middle-cols a {
+  color: var(--secondary-color);
+}
+
+.footer-right {
+  padding: 20px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+}
+
+.footer-bottom ion-icon {
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+.form-basic-account {
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.inputs-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.inputs-grid-3 {
+    grid-template-columns: 2fr 4fr 1fr;
+    gap: 20px;
+}
+
+.have-account a {
+    color: var(--tertiary-color);
+}
+
+.login-width {
+    width: 585px;
+    padding: 30px 62px;
+}
+
+.lost-password {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--tertiary-color);
+}
+
+.account-or::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background-color: var(--gray-60);
+}
+
+.account-or::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40%;
+    height: 2px;
+    background-color: var(--gray-60);
+}
+
+button.button-login {
+    height: 59px;
+}
+
+.third-part-login {
+    height: 42px;
+}
+
+.third-part-login ion-icon {
+    margin-right: 10px;
+}
+
+button.linkedin {
+    background-color: #0A66C2;
+    color: var(--secondary-color);
+}
+
+button.linkedin ion-icon {
+    color: var(--secondary-color);
+}
+
+button.google {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.08), 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
