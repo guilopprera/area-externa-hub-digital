@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+:root {
+  /* Colors */
+  --primary-color: #011a2b;
+  --secondary-color: #ffffff;
+  --tertiary-color: #34c1e2;
+  --tertiary-color-dark: rgba(52, 193, 226, 0);
+
+  /* Shades of Gray */
+  --gray-10: #f4f7fb;
+  --gray-20: #eaeef5;
+  --gray-30: #d7deea;
+  --gray-60: #8690a2;
+  --gray-70: #646e82;
+  --gray-80: rgba(19, 18, 18, 0.6);
+  --gray-90: #383D48;
+
+  /* Typography Sizes */
+  --smaller-size: 0.875rem;
+  --small-size: 1rem;
+  --normal-size: 1.125rem;
+  --big-size: 1.5rem;
+  --bigger-size: 1.75rem;
+  --biggest-sizer: 3rem;
+
+  /* Trasitions Times */
+  --normal-time: 3s;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  line-height: 130%;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  background-color: var(--secondary-color);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  height: 82px;
+  background-color: var(--primary-color);
+}
+
+button {
+  height: 100%;
+  border: none;
+  padding: 17px 55px;
+  border-radius: 8px;
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+section {
+  margin-top: 130px;
+}
+
+main {
+  margin-top: 20px;
+  border-radius: 50px;
+  background-color: var(--gray-10);
+  padding: 50px 80px;
+  box-shadow: 0px 8px 16px rgba(190, 190, 190, 0.2);
+}
+
+h1 {
+  width: 100%;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: var(--biggest-sizer);
+}
+
+h2 {
+  font-family: "Bahnschrift", sans-serif;
+  font-size: var(--bigger-size);
+}
+
+h3 {
+  font-family: "Bahnschrift", sans-serif;
+  font-size: var(--big-size);
+}
+
+footer {
+  height: 454px;
+  background: linear-gradient(90deg, #011a2b 0%, #0a2d51 100%);
+  padding: 60px 100px;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px 16px;
+  border-radius: 60px;
+  border: none;
+  color: var(--gray-80);
+}
+
+select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 12px 16px;
+  border-radius: 60px;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+textarea {
+    margin: 30px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    color: var(--gray-80);
+}

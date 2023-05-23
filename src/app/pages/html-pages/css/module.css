@@ -1,0 +1,168 @@
+.width-100 {
+  width: 100%;
+}
+
+.witdh-1200px {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.height-100vh {
+  min-height: 100dvh;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.select-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 60px;
+  border: none;
+  background-color: var(--secondary-color);
+}
+
+.input-icon {
+  position: absolute;
+  font-size: var(--normal-size);
+  color: var(--tertiary-color);
+  top: 12px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.icon-right {
+  right: 16px;
+}
+
+.icon-left {
+  left: 16px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.added-block {
+  padding: 8px 16px;
+  margin-bottom: 22px;
+  background-color: var(--gray-20);
+}
+
+.added-block span,
+.added-block ion-icon {
+  color: var(--gray-90);
+}
+
+.display-none {
+  display: none;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 4px;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: var(--tertiary-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--secondary-color);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

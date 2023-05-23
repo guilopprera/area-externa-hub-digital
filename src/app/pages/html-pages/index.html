@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/module.css" />
+    <link rel="stylesheet" href="css/state.css" />
+  </head>
+  <body class="width-100 height-100vh background-img">
+    <header class="width-100 flex-row center" id="header">
+      <div class="witdh-1200px flex-row center space-between">
+        <div class="logo">
+          <a href=""
+            ><img src="assets/img/logos/starup_horizontal_branca.png" alt=""
+          /></a>
+        </div>
+
+        <div class="main-menu">
+          <nav class="nav-menu uppercase">
+            <ul class="flex-row center space-between">
+              <li><a href="">Hub</a></li>
+              <li><a href="">Startups</a></li>
+              <li><a href="">Mantenedores</a></li>
+              <li><a href="">Serviços</a></li>
+              <li><a href="">Eventos</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="login-button flex-row center">
+          <button class="width-100 flex-row space-around uppercase">
+            <ion-icon name="person-outline" class="weight-600"></ion-icon>
+            <span class="weight-600">Login</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="witdh-1200px">
+      <nav class="width-100 breadcrumb flex-row">
+        <ul class="flex-row">
+          <li><a href="">Home</a></li>
+          <li class="breadcrumb-separator">></li>
+          <li><a href="" class="breadcrumb-active">Ativo</a></li>
+        </ul>
+      </nav>
+
+      <main class="width-100 flex-col center">
+        <h1 class="weight-700 text-left">Título</h1>
+      </main>
+    </section>
+
+    <footer class="width-100">
+      <div class="width-100 flex-col center footer-container">
+        <div class="footer-top width-100 grid">
+          <div class="footer-left flex-col space-between">
+            <div class="footer-logo flex-row center">
+              <a href="">
+                <img src="assets/img/logos/startup_branca.png" alt="" />
+              </a>
+            </div>
+            <div class="footer-socials flex-row space-around">
+              <a href="">
+                <div class="social-icon flex-row center">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </div>
+              </a>
+              <a href="">
+                <div class="social-icon flex-row center">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+              </a>
+              <a href="">
+                <div class="social-icon flex-row center">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="footer-middle grid">
+            <div class="footer-middle-cols flex-col space-between">
+              <p><a href="">Missão</a></p>
+              <p><a href="">Quem somos</a></p>
+              <p><a href="">A indústria</a></p>
+              <p><a href="">Trabalhe conosco</a></p>
+            </div>
+            <div class="footer-middle-cols flex-col space-between">
+              <p><a href="">Eventos</a></p>
+              <p><a href="">Blog</a></p>
+              <p><a href="">Contato</a></p>
+              <p><a href="">Termos de LGPD</a></p>
+            </div>
+          </div>
+          <div class="footer-right flex-col space-around">
+            <h2 class="weight-700 secondary-color">
+              Inscreva-se na nossa newsletter
+            </h2>
+            <form class="width-100 position-relative" action="">
+              <input
+                type="text"
+                placeholder="Insira aqui seu e-mail"
+                id="newsletter-subscribe"
+                class="width-100"
+              />
+              <ion-icon
+                class="input-icon icon-right"
+                name="mail-outline"
+              ></ion-icon>
+            </form>
+          </div>
+        </div>
+        <div class="width-100 footer-bottom flex-row space-between">
+          <div class="flex-row center">
+            <small class="secondary-color">
+              &copy; Startup Sesi MS. All rights reserved
+            </small>
+          </div>
+          <div class="flex-row center">
+            <a href="#header" class="secondary-color">
+              Voltar ao topo
+              <ion-icon name="arrow-up-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

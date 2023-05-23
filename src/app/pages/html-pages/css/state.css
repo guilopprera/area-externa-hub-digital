@@ -1,0 +1,40 @@
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-socials a:hover .social-icon {
+  background-color: var(--tertiary-color);
+}
+
+.footer-socials a:hover .social-icon ion-icon {
+  color: var(--primary-color);
+}
+
+input:focus,
+select:focus,
+select:hover,
+textarea:focus {
+  outline: 1px solid var(--tertiary-color);
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.edit-photo:hover span, .edit-photo:hover ion-icon {
+    color: var(--tertiary-color);
+}
+
+.form-added-block .add-added-block:hover {
+    text-decoration: underline;
+}
+
+.form-added-block #add-experience-ok:checked~.new-experience,
+.form-added-block #add-education-ok:checked~.new-education {
+    display: block;
+}
+
+.mentoring-button div #montoring-checkbox:checked~span {
+    left: 22px;
+    background-color: var(--secondary-color);
+}
